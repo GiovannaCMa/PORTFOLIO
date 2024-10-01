@@ -323,6 +323,8 @@ form textarea {
 .change .bar3 {
     transform: translate(0, 0.65rem) rotate(-40deg);
 }
+
+
 /*menu*/
 /*extra small*/
 @media (max-width: 600px) {
@@ -362,13 +364,21 @@ form textarea {
         font-weight: 700;
         line-height: 1.3;
     }
-}
 
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+}
 
 /*small: smartphone*/
 @media (min-width: 600px) {
 
-    .projetos-box {
+    .service-box {
         width: 70%;
     }
 }
@@ -392,7 +402,17 @@ form textarea {
         gap: 1.6rem;
     }
 
-    .projetos-container {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .portifolio-container {
         grid-template-columns: auto auto;
     }
 
@@ -409,7 +429,7 @@ form textarea {
 /*large: notebook*/
 @media (min-width: 992px) {
 
-    .projetos-container {
+    .service-container {
         flex-direction: row;
         gap: 1.2rem;
     }
